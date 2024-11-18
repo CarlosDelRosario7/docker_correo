@@ -1,0 +1,18 @@
+<html lang="es">
+  <head>
+    <title>Enviar correo</title>
+    <link rel="stylesheet" href="./static/style.css">
+  </head>
+  <body>
+    <h1 id="titulo">Enviar Correo</h1>
+    
+    <form action="/" method="post">
+      <input type="email" id="destinatario" name="destinatario" placeholder="Destinatario" required><br>
+      <input type="text" id="asunto" name="asunto" placeholder="Asunto" required><br>
+      <textarea id="cuerpo" name="cuerpo" placeholder="Cuerpo del correo" required></textarea>
+      <button type="submit">Enviar correo</button>
+    </form>
+
+    <script src="./static/script.js"></script>
+  </body>
+</html>

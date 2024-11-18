@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  correo:
+    container_name: danny-correo
+    image: dannyhack/correo:v1
+    ports:
+      - 8888:8000
+    restart: unless-stopped
+    environment:
+      - EMAIL=${EMAIL}
+      - PASSWORD=${PASSWORD}
+      - SMTP_SERVER=${SMTP_SERVER}
+      - SMTP_PORT=${SMTP_PORT}
+      - FAST_ADMIN=${FAST_ADMIN}
+      - FAST_CLAVE=${FAST_CLAVE}
