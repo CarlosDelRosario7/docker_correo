@@ -1,3 +1,4 @@
+
 # Docker_Correo
 
 ## Definición
@@ -43,7 +44,8 @@ Para obtener una clave para mandar correo en Gmail, deberá tener la verificaci�
 ## Descargar la imagen desde Docker Hub
 
 Para descargar la imagen:
-> docker pull carlosdelrosario7/correo
+
+    docker pull carlosdelrosario7/correo
 
 #### Nota
 Puedes omitir este paso ejecutando el docker-compose.yaml directamente y la imagen se descargará automáticamente.
@@ -75,4 +77,3 @@ Para detener el contenedor:
 #### Notas
 
 Recuerde modificar correctamente el archivo .env antes de correr la imagen.
-
