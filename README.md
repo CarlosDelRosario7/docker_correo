@@ -50,7 +50,7 @@ Puedes omitir este paso ejecutando el docker-compose.yaml directamente y la imag
 
 ## Construcción de la imagen
 
-En caso de, por alguna razón, no pudeo descargar la imagen, construya dicha imagen; para hacer esto, deberás ejecutar:
+En caso de, por alguna razón, no pudo descargar la imagen, construya dicha imagen; para hacer esto, deberás ejecutar:
 
     docker build -t carlosdelrosario7/correo:v1 .
 
