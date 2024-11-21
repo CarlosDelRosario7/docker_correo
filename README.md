@@ -8,7 +8,7 @@ Es un proyecto simple en python y docker que crea una imagen que envíe correos.
 
 Para clonar el repositorio:
 
-    git clone https://github.com/CarlosDelRosario7/docker_correo/blob/main/.gitignore.git
+    git clone https://github.com/CarlosDelRosario7/docker_correo.git
 
 ## Configuración
 
