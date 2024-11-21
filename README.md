@@ -33,37 +33,46 @@ Copie el archivo .env para configurarlo:
 > FAST_ADMIN=admin -> Usuario para docs y redoc de FastAPI
 > 
 > FAST_CLAVE=admin -> Clave de FastAPI para docs y redoc
+>
+> COUN_PORT=80 -> Puerto que usará el contenedor para FastAPI
+
+#### Nota
+Para obtener una clave para mandar correo en Gmail, deberá tener la verificación de 2 pasos activa y craer una "contraseña de aplicación" en:
+> https://myaccount.google.com/u/0/apppasswords
+
+## Descargar la imagen desde Docker Hub
+
+Para descargar la imagen:
+> docker pull carlosdelrosario7/correo
+
+#### Nota
+Puedes omitir este paso ejecutando el docker-compose.yaml directamente y la imagen se descargará automáticamente.
 
 ## Construcción de la imagen
 
-Para construir la imagen, deberás ejecutar:
+En caso de, por alguna razón, no pudeo descargar la imagen, construya dicha imagen; para hacer esto, deberás ejecutar:
 
-    docker build -t dannyhack/correo:v1
+    docker build -t carlosdelrosario7/correo:v1 .
 
 Si deseas guardar la imagen como un .tar:
 
-    docker save dannyhack/correo:v1 > ./danny_correo.tar
+    docker save carlosdelrosario7/correo:v1 > ./danny_correo.tar
 
 Para cargar el .tar:
 
     docker load < ./danny_correo.tar
 
-## Ejecución de la imagen
+## Ejecución del contenedor
 
- Para correr la imagen:
+ Para correr el contenedor a partir de la imagen:
 
     docker compose up -d
 
-Para detener la imagen:
+Para detener el contenedor:
 
     docker compose down
 
-## Notas:
+#### Notas
 
-- Recuerde modificar correctamente el archivo .env antes de correr la imagen.
-- El contenedor usará el puerto 8888. Podrás cambiar esto en el docker-compose.yaml.
-- Si el repo está privado:
-   
-
-     git clone https://your_token_classic:x-oauth-basic@github.com/CarlosDelRosario7/docker_correo.git
+Recuerde modificar correctamente el archivo .env antes de correr la imagen.
 

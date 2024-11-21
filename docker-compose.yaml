@@ -3,9 +3,9 @@ version: '3.8'
 services:
   correo:
     container_name: danny-correo
-    image: dannyhack/correo:v1
+    image: carlosdelrosario7/correo:v1
     ports:
-      - 8888:8000
+      - ${CONT_PORT}:8000
     restart: unless-stopped
     environment:
       - EMAIL=${EMAIL}
